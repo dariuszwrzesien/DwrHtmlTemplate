@@ -52,14 +52,30 @@
     <div class="section" id="section1">
         <div class="section-container">
             <div class="team">
-                <div class="team-mate">
-                    <h3>Lorem</h3>
+                <div class="team-mate first">
+                    <h2>Lorem impsum</h2>
                     <img src="img/p1.png">
-                    <p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-                    <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
+                    <p class="short-description">She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                    <p class="long-description">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
                         her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the
                         Line Lane. Pityful a rethoric question ran over her cheek, then </p>
                 </div>
+                <div class="team-mate">
+                    <h2>Dolor Sit</h2>
+                    <img src="img/p2.png">
+                    <p class="short-description">She packed her seven versalia.</p>
+                    <p class="long-description">She had a last view back on the skyline of
+                        her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the
+                        Line Lane. Pityful a rethoric question ran over her cheek, then </p>
+                </div>
+                <div class="team-mate">
+                    <h2>Amet</h2>
+                    <img src="img/p3.png">
+                    <p class="short-description">She packed her seven versalia, put her initial into.</p>
+                    <p class="long-description">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
+                        her hometown Bookmarksgrove, the headline of Alphabet Village. </p>
+                </div>
+                <div class="clear-both"></div>
             </div>
         </div>
     </div>
