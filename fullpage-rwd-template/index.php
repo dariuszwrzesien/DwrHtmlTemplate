@@ -41,10 +41,27 @@
 </nav>
 <div id="fullpage">
     <div class="section " id="section0">
-        <h1>Far far away, behind the word mountains, far from the countries </h1>
-        <h4>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-            A small river named Duden flows by their place and supplies it with the necessary regelialia.
-            It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</h4>
+        <div class="section-container">
+            <img class="logo" src="img/logo.png">
+            <h1>Far far away, behind the word mountains, far from the countries </h1>
+            <h4>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</h4>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="section-container">
+            <div class="team">
+                <div class="team-mate">
+                    <h3>Lorem</h3>
+                    <img src="img/p1.png">
+                    <p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                    <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
+                        her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the
+                        Line Lane. Pityful a rethoric question ran over her cheek, then </p>
+                </div>
+            </div>
+        </div>
     </div>
 <!--    <div class="section active" id="section1">-->
 <!--        <div class="slide">-->
@@ -103,7 +120,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            sectionsColor: ['#1bbc9b', '', '#7BAABE', 'whitesmoke', '#ccddff'],
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
             menu: '#menu',
             scrollingSpeed: 1000
