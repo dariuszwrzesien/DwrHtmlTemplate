@@ -8,6 +8,7 @@
     <meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
     <meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
     <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
@@ -25,7 +26,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -51,32 +51,7 @@
     </div>
     <div class="section" id="section1">
         <div class="section-container">
-            <div class="team">
-                <div class="team-mate first">
-                    <h2>Lorem impsum</h2>
-                    <img src="img/p1.png">
-                    <p class="short-description">She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-                    <p class="long-description">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
-                        her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the
-                        Line Lane. Pityful a rethoric question ran over her cheek, then </p>
-                </div>
-                <div class="team-mate">
-                    <h2>Dolor Sit</h2>
-                    <img src="img/p2.png">
-                    <p class="short-description">She packed her seven versalia.</p>
-                    <p class="long-description">She had a last view back on the skyline of
-                        her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the
-                        Line Lane. Pityful a rethoric question ran over her cheek, then </p>
-                </div>
-                <div class="team-mate">
-                    <h2>Amet</h2>
-                    <img src="img/p3.png">
-                    <p class="short-description">She packed her seven versalia, put her initial into.</p>
-                    <p class="long-description">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of
-                        her hometown Bookmarksgrove, the headline of Alphabet Village. </p>
-                </div>
-                <div class="clear-both"></div>
-            </div>
+
         </div>
     </div>
 <!--    <div class="section active" id="section1">-->
@@ -129,17 +104,20 @@
 <!--    </div>-->
 </div>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
 <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
             sectionsColor: ['#1bbc9b', '', '#7BAABE', 'whitesmoke', '#ccddff'],
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-            menu: '#menu',
-            scrollingSpeed: 1000
+            menu: '.navbar',
+            scrollingSpeed: 1000,
+            scrollOverflow: true
         });
     });
 </script>

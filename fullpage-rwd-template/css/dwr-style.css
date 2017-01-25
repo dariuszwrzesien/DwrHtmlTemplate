@@ -1,4 +1,5 @@
 body {
+    font-size: 100%;
     line-height: 1;
 }
 ol, ul {
@@ -19,25 +20,37 @@ table {
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
-.margin-top-100{
-    margin-top: 100px;
-}
 .clear-both{
     clear: both;
 }
-
 @media (min-width:320px) {
     /* smartphones, iPhone, portrait 480x320 phones */
+
+    /* Navigator bar */
+    .navbar{
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-toggle{
+        background-color: #ffffff;
+    }
+    .navbar-collapse{
+        background-color: #ffffff;
+    }
 
     .section-container{
         width: 85%;
         margin: 0 auto;
     }
+    .section-container h1{
+        font-size: 1.975em;
+    }
+    .section-container h4{
+        text-align: left;
+        font-size: 1.625em;
+    }
 
     /* Section 0 */
-    #section0 .logo{
-        width: 250px;
-    }
     #section0{
         background: url('../img/section0.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -45,89 +58,24 @@ h1, h2, h3, h4, h5, h6 {
         -o-background-size: cover;
         background-size: cover;
     }
+    #section0 .logo{
+        width: 250px;
+    }
+    #section0 h4{
+        margin-top: 15px;
+    }
 
-    /* Section 1 */
-    #section1{
-        background: url('../img/section1a.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-
-    }
-    .team{
-        width: 270px;
-        margin: 0 auto;
-    }
-    .team-mate {
-        /* http://www.cssmatic.com/gradient-generator */
-        border-radius: 121px 49px 49px 49px;
-        -moz-border-radius: 121px 49px 49px 49px;
-        -webkit-border-radius: 121px 49px 49px 49px;
-        border: 4px solid #ffffff;
-
-        background: rgba(255,255,255,1);
-        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
-        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
-
-        width: 20%;
-        min-width: 270px;
-        max-width: 450px;
-        margin: 35px auto;
-        text-align: center;
-    }
-    .team-mate.first{
-        margin-top: 85px;
-    }
-    .team-mate h2 {
-        padding-top: 35px;
-        color: #4076BC;
-    }
-    .team-mate img{
-        width: 100px;
-    }
-    .team-mate p{
-        color: #5c5c5c;
-        line-height: 18px;
-        width: 80%;
-        margin: 20px auto;
-    }
-    .team-mate p.short-description{
-        font-weight: 700;
-        min-height: 80px;
-    }
-    .team-mate p.long-description{
-        font-weight: 200;
-        text-align: justify;
-        min-height: 180px;
-    }
 
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-    .team{
-        width: 640px;
-    }
-    .team-mate{
-        margin-top: 25px;
-        float: left;
-    }
-    .team-mate.first{
-        margin-top: 25px;
-    }
+
 
 }
 @media (min-width:961px) {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .team{
-        width: 960px;
-    }
+
 
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
