@@ -17,6 +17,7 @@
   "dependencies": {
     "fullpage.js": "^2.9.2",
     "jquery-ui": "^1.12.1",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "swiper": "^3.4.1"
   }
 }
