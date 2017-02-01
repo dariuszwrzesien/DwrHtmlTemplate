@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .clear-both{
     clear: both;
 }
-@media (min-width:320px) {
+@media (min-width:0) {
     /* smartphones, iPhone, portrait 480x320 phones */
 
     /* Navigator bar */
@@ -37,17 +37,12 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-collapse{
         background-color: #ffffff;
     }
-
-    .section-container{
-        width: 85%;
-        margin: 0 auto;
-    }
     .section-container h1{
         font-size: 1.975em;
     }
     .section-container h4{
-        text-align: left;
         font-size: 1.625em;
+        text-align: left;
     }
 
     /* Section 0 */
@@ -58,6 +53,11 @@ h1, h2, h3, h4, h5, h6 {
         -o-background-size: cover;
         background-size: cover;
     }
+    #section0 .section-container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
     #section0 .logo{
         width: 250px;
     }
@@ -65,12 +65,27 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 15px;
     }
 
+    /* Squares */
+    .square-25{
+        background-color: #0b93d5;
+        height: 25%;
+    }
+
+
 
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
+
+}
+@media (min-width:768px) {
+    /* bootstrap collapse points */
+    .navbar{
+        background-color: #ffffff;
+        border: none;
+    }
 
 }
 @media (min-width:961px) {

@@ -51,7 +51,10 @@
     </div>
     <div class="section" id="section1">
         <div class="section-container">
-
+            <div class="square-25">
+                <h1>Lorem ipsum</h1>
+                <h2>dolor sit amet</h2>
+            </div>
         </div>
     </div>
 <!--    <div class="section active" id="section1">-->
