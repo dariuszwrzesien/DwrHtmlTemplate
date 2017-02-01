@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/swiper/dist/css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="css/dwr-style.css" />
 </head>
 <body>
@@ -42,6 +43,7 @@
 <div id="fullpage">
     <div class="section mac-laptop-background full-background" id="section0">
         <div class="section-container">
+<!--            <vimeo movie >https://vimeo.com/79142264-->
             <img class="logo" src="img/logo.png">
             <h1>Far far away, behind the word mountains, far from the countries </h1>
             <h3>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
@@ -68,54 +70,132 @@
             </div>
         </div>
     </div>
-<!--    <div class="section active" id="section1">-->
-<!--        <div class="slide">-->
-<!--            <div class="intro">-->
-<!--                <h1>Create Sliders</h1>-->
-<!--                <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>-->
-<!--                <img src="imgs/slider.png" alt="slider" />-->
-<!--            </div>-->
-<!---->
-<!--        </div>-->
-<!--        <div class="slide">-->
-<!--            <div class="intro">-->
-<!--                <img src="imgs/1.png" alt="simple" />-->
-<!--                <h1>Simple</h1>-->
-<!--                <p>Easy to use. Configurable and customizable.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="slide">-->
-<!--            <div class="intro">-->
-<!--                <img src="imgs/2.png" alt="Cool" />-->
-<!--                <h1>Cool</h1>-->
-<!--                <p>It just looks cool. Impress everybody with a simple and modern web design!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="slide">-->
-<!--            <div class="intro">-->
-<!--                <img src="imgs/3.png" alt="Compatible" />-->
-<!--                <h1>Compatible</h1>-->
-<!--                <p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="section" id="section2">-->
-<!--        <div class="intro">-->
-<!--            <h1>Example</h1>-->
-<!--            <p>HTML markup example to define 4 sections.</p>-->
-<!--            <img src="imgs/example2.png" alt="example" />-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="section" id="section3">-->
-<!--        <div class="intro">-->
-<!--            <h1>Working On Tablets</h1>-->
-<!--            <p>-->
-<!--                Designed to fit to different screen sizes as well as tablet and mobile devices.-->
-<!--                <br /><br /><br /><br /><br /><br />-->
-<!--            </p>-->
-<!--        </div>-->
-<!--        <img src="imgs/tablets.png" alt="tablets" />-->
-<!--    </div>-->
+    <div class="section gradient-blue-light" id="section2">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="swiper-slide-header">
+                        <span class="glyphicon glyphicon-headphones swiper-icon" aria-hidden="true"></span>
+                        <span>Hello World!</span>
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="swiper-slide-header">
+                        <span class="glyphicon glyphicon-camera swiper-icon" aria-hidden="true"></span>
+                        <span>Lorem ipsum dolor sit amet</span>
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="swiper-slide-header">
+                        <span class="glyphicon glyphicon-phone swiper-icon" aria-hidden="true"></span>
+                        <span>At solmen va esser necessi far uniform</span>
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="swiper-slide-header">
+                        <span class="glyphicon glyphicon-thumbs-up swiper-icon" aria-hidden="true"></span>
+                        <span>Serenity has taken possession ...</span>
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
+                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
+                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
+                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
+                        Suspendisse sollicitudin diam sed pulvinar cursus.
+                    </p>
+                    <p class="swiper-slide-description">
+                        Cum sociis natoque penatibus et magnis dis
+                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="section fp-auto-height" id="section3">
+        <div class="footer gradient-blue">
+            <div class="footer-container">
+                <img class="logo" src="img/logo.png">
+                <div class="social-icons-container">
+                    <img class='social-icon' src="img/facebook_circle.png" alt="facebook">
+                    <img class='social-icon' src="img/linkedin_circle.png" alt="linkedin">
+                    <img class='social-icon' src="img/twitter_circle.png" alt="twitter">
+                    <img class='social-icon' src="img/github_circle.png" alt="github">
+                    <img class='social-icon' src="img/rss_circle.png" alt="rss">
+                </div>
+                <p class="copyrights">Copyrights: Lorem Ipsum</p>
+                <p class="important-links"></p>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -124,16 +204,31 @@
 <script type="text/javascript" src="bower_components/fullpage.js/vendors/scrolloverflow.min.js"></script>
 <script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
 <script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+<script type="text/javascript" src="bower_components/swiper/dist/js/swiper.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', '', '#7BAABE', 'whitesmoke', '#ccddff'],
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
             menu: '.navbar',
             scrollingSpeed: 1000,
-//            scrollOverflow: true,
             responsive: 961 //switch on fullpage.js
             });
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+
+            /* Pagination */
+            pagination: '.swiper-pagination',
+            paginationType: 'bullets',
+            paginationHide: false,
+            paginationClickable: true,
+            paginationElement: 'span',
+
+            /* Next/Prev buttons */
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+
+        })
     });
 </script>
 

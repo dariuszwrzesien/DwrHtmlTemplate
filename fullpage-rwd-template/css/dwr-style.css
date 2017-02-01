@@ -36,7 +36,30 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-background{background: url('../img/mobile.jpg') no-repeat center center fixed;}
 .silicon-chips-background{background: url('../img/silicon-chips.jpg') no-repeat center center fixed;}
 .social-icons-background{background: url('../img/social-icons.jpg') no-repeat center center fixed;}
-/* End of backgrounds */
+
+/* Efects*/
+
+.gradient-blue-light{
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(195,219,247,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(34%, rgba(255,255,255,1)), color-stop(100%, rgba(195,219,247,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(195,219,247,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(195,219,247,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(195,219,247,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 34%, rgba(195,219,247,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c3dbf7', GradientType=0 );
+}
+.gradient-blue{
+    background: rgba(195,219,247,1);
+    background: -moz-linear-gradient(top, rgba(195,219,247,1) 0%, rgba(133,168,245,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(195,219,247,1)), color-stop(100%, rgba(133,168,245,1)));
+    background: -webkit-linear-gradient(top, rgba(195,219,247,1) 0%, rgba(133,168,245,1) 100%);
+    background: -o-linear-gradient(top, rgba(195,219,247,1) 0%, rgba(133,168,245,1) 100%);
+    background: -ms-linear-gradient(top, rgba(195,219,247,1) 0%, rgba(133,168,245,1) 100%);
+    background: linear-gradient(to bottom, rgba(195,219,247,1) 0%, rgba(133,168,245,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3dbf7', endColorstr='#85a8f5', GradientType=0 );
+}
+
 @media (min-width:0) {
     /* smartphones, iPhone, portrait 480x320 phones */
 
@@ -82,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 20px;
     }
 
-    /* Squares */
+    /* Grid */
     .grid{
         width: 100%;
         height: 100%;
@@ -102,6 +125,51 @@ h1, h2, h3, h4, h5, h6 {
         vertical-align: middle;
         text-align: center;
     }
+
+    /* Swpier */
+    .swiper-container {
+        background-color: transparent;
+        width: 90%;
+        height: 300px;
+    }
+    .swiper-slide{
+        color: #404040;
+    }
+    .swiper-slide-header{
+        font-size: 4.325em;
+        text-align: center;
+    }
+    .swiper-slide-header .swiper-icon{
+        margin: 20px;
+    }
+    .swiper-slide-description{
+        width: 80%;
+        margin: 10px auto;
+        font-size: 1.325em;
+        text-align: justify;
+    }
+
+    /* Footer */
+    .footer{
+        height: 300px;
+    }
+    .footer-container{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer .logo{
+        bottom: 50%;
+        height: 50px;
+    }
+    .footer .social-icons-container{
+        width: 265px;
+        margin: 0 auto;
+    }
+    .footer .social-icons-container .social-icon{
+        width: 40px;
+        margin: 5px;
+    }
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
@@ -113,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width:768px) { /* bootstrap collapse points */
     .navbar{
         background-color: #ffffff;
-        border: none;
+        border-bottom: 1px solid #c5c5c5;
     }
 
 }
