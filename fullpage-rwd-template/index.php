@@ -76,101 +76,45 @@
                 <div class="swiper-slide">
                     <p class="swiper-slide-header">
                         <span class="glyphicon glyphicon-headphones swiper-icon" aria-hidden="true"></span>
+                    </p>
+                    <p class="swiper-slide-header">
                         <span>Hello World!</span>
                     </p>
                     <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
-                    </p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu ipsum enim.
+                        Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus.
                 </div>
                 <div class="swiper-slide">
                     <p class="swiper-slide-header">
                         <span class="glyphicon glyphicon-camera swiper-icon" aria-hidden="true"></span>
+                    </p>
+                    <p class="swiper-slide-header">
                         <span>Lorem ipsum dolor sit amet</span>
                     </p>
                     <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                        Mauris posuere urna quis auctor consequat.
                     </p>
                 </div>
                 <div class="swiper-slide">
                     <p class="swiper-slide-header">
                         <span class="glyphicon glyphicon-phone swiper-icon" aria-hidden="true"></span>
+                    </p>
+                    <p class="swiper-slide-header">
                         <span>At solmen va esser necessi far uniform</span>
                     </p>
                     <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                        Mauris posuere urna quis auctor consequat.
                     </p>
                 </div>
                 <div class="swiper-slide">
                     <p class="swiper-slide-header">
                         <span class="glyphicon glyphicon-thumbs-up swiper-icon" aria-hidden="true"></span>
+                    </p>
+                    <p class="swiper-slide-header">
                         <span>Serenity has taken possession ...</span>
                     </p>
                     <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus. Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu odio vel sapien scelerisque
-                        interdum. Morbi tellus ligula, eleifend a sapien vel, ultrices tincidunt lectus. Suspendisse eu
-                        ipsum enim. Nulla lobortis diam sed tellus pretium, et pretium dolor dapibus. Donec in accumsan
-                        nibh. Etiam sit amet lectus tellus. Proin lacus sem, luctus sed urna a, pulvinar fermentum est.
-                        Suspendisse sollicitudin diam sed pulvinar cursus.
-                    </p>
-                    <p class="swiper-slide-description">
-                        Cum sociis natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Mauris posuere urna quis auctor consequat.
+                        Mauris posuere urna quis auctor consequat.
                     </p>
                 </div>
             </div>
@@ -190,14 +134,11 @@
                     <img class='social-icon' src="img/github_circle.png" alt="github">
                     <img class='social-icon' src="img/rss_circle.png" alt="rss">
                 </div>
-                <p class="copyrights">Copyrights: Lorem Ipsum</p>
-                <p class="important-links"></p>
+                <p class="copyrights">Copyrights: <strong>Lorem Ipsum</strong></p>
             </div>
         </div>
     </div>
-
 </div>
-
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -227,10 +168,8 @@
             /* Next/Prev buttons */
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev'
-
         })
     });
 </script>
-
 </body>
 </html>

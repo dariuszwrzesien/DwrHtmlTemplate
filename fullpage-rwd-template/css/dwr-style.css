@@ -1,19 +1,22 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
+
+body{
+    font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     line-height: 1;
 }
-ol, ul {
+ol, ul{
     list-style: none;
 }
-blockquote, q {
+blockquote, q{
     quotes: none;
 }
 blockquote:before, blockquote:after,
-q:before, q:after {
+q:before, q:after{
     content: '';
     content: none;
 }
-table {
+table{
     border-collapse: collapse;
     border-spacing: 0;
 }
@@ -24,18 +27,18 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
 /* Backgounds */
-.full-background {
+.full-background{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-.mac-laptop-background{background: url('../img/mac-laptop.jpg') no-repeat center center fixed;}
-.code-background{background: url('../img/code.jpg') no-repeat center center fixed;}
-.keyboard-background{background: url('../img/keyboard.jpg') no-repeat center center fixed;}
-.mobile-background{background: url('../img/mobile.jpg') no-repeat center center fixed;}
-.silicon-chips-background{background: url('../img/silicon-chips.jpg') no-repeat center center fixed;}
-.social-icons-background{background: url('../img/social-icons.jpg') no-repeat center center fixed;}
+.mac-laptop-background{background: url('../img/mac-laptop.jpg') no-repeat center center;}
+.code-background{background: url('../img/code.jpg') no-repeat center center;}
+.keyboard-background{background: url('../img/keyboard.jpg') no-repeat center center;}
+.mobile-background{background: url('../img/mobile.jpg') no-repeat center center;}
+.silicon-chips-background{background: url('../img/silicon-chips.jpg') no-repeat center center;}
+.social-icons-background{background: url('../img/social-icons.jpg') no-repeat center center;}
 
 /* Efects*/
 
@@ -66,16 +69,26 @@ h1, h2, h3, h4, h5, h6 {
     h1, h2, h3, h4 {
         margin: 0;
         padding: 0;
+        line-height: 150%;
     }
     h1{font-size: 2.175em;}
     h2{font-size: 1.775em;}
     h3{font-size: 1.525em;}
     h4{font-size: 1.325em;}
 
+    p {line-height: 150%;}
+
     /* Navigator bar */
     .navbar{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5em;
         background-color: transparent;
         border: none;
+    }
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover{
+        background-color: #aad6ff;
     }
     .navbar-toggle{
         background-color: #ffffff;
@@ -120,14 +133,14 @@ h1, h2, h3, h4, h5, h6 {
     .grid .cell-25 h1,
     .grid .cell-25 h2,
     .grid .cell-25 h3,
-    .grid .cell-25 h4 {
+    .grid .cell-25 h4{
         display: table-cell;
         vertical-align: middle;
         text-align: center;
     }
 
     /* Swpier */
-    .swiper-container {
+    .swiper-container{
         background-color: transparent;
         width: 90%;
         height: 300px;
@@ -135,8 +148,13 @@ h1, h2, h3, h4, h5, h6 {
     .swiper-slide{
         color: #404040;
     }
+
+    .swiper-button-next{display:none}
+    .swiper-button-prev{display:none}
+
     .swiper-slide-header{
         font-size: 4.325em;
+        line-height: 100%;
         text-align: center;
     }
     .swiper-slide-header .swiper-icon{
@@ -146,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 80%;
         margin: 10px auto;
         font-size: 1.325em;
-        text-align: justify;
+        text-align: center;
     }
 
     /* Footer */
@@ -159,12 +177,15 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 auto;
     }
     .footer .logo{
-        bottom: 50%;
+        margin-top: 50px;
+        margin-bottom: 5px;
         height: 50px;
     }
     .footer .social-icons-container{
         width: 265px;
-        margin: 0 auto;
+        margin: 10px auto;
+        border-top: 1px solid #8c8c8c;
+        border-bottom: 1px solid #8c8c8c;
     }
     .footer .social-icons-container .social-icon{
         width: 40px;
@@ -176,14 +197,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
-
 }
 @media (min-width:768px) { /* bootstrap collapse points */
     .navbar{
         background-color: #ffffff;
         border-bottom: 1px solid #c5c5c5;
     }
-
+    .swiper-button-next{display:block}
+    .swiper-button-prev{display:block}
 }
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
     #fullpage{
@@ -193,7 +214,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 50%;
         height: calc(50% - 25px);
     }
-
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
