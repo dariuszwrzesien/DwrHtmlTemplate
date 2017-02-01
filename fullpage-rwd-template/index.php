@@ -31,10 +31,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-                    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-                    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-                    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+                    <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">Content</a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage">Slider</a></li>
+                    <li data-menuanchor="4thpage"><a href="#4thpage">Share</a></li>
                 </ul>
             </div>
         </div>
@@ -43,12 +43,16 @@
 <div id="fullpage">
     <div class="section mac-laptop-background full-background" id="section0">
         <div class="section-container">
-<!--            <vimeo movie >https://vimeo.com/79142264-->
+            <video id="homeVideo" loop muted data-autoplay>
+                <source src="video/home_video_low.mp4" type="video/mp4">
+            </video>
+            <div class="layer">
             <img class="logo" src="img/logo.png">
-            <h1>Far far away, behind the word mountains, far from the countries </h1>
-            <h3>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</h3>
+                <h1>Far far away, behind the word mountains, far from the countries </h1>
+                <h3>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</h3>
+            </div>
         </div>
     </div>
     <div class="section" id="section1">
@@ -148,12 +152,23 @@
 <script type="text/javascript" src="bower_components/swiper/dist/js/swiper.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+        /**
+         * FullPage.js
+         * http://alvarotrigo.com/fullPage/
+         * https://github.com/alvarotrigo/fullPage.js
+         */
         $('#fullpage').fullpage({
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
             menu: '.navbar',
             scrollingSpeed: 1000,
             responsive: 961 //switch on fullpage.js
             });
+
+        /**
+         * Swiper
+         * http://idangero.us/swiper/
+         * https://github.com/nolimits4web/Swiper
+         */
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'horizontal',
             loop: true,
@@ -168,7 +183,20 @@
             /* Next/Prev buttons */
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev'
-        })
+        });
+
+        /* Hide navbar after click */
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+        /* Bootstrap 3 navbar show event */
+        $('.navbar-collapse').on('shown.bs.collapse', function() {
+//            console.log('show');
+        });
+        /* Bootstrap 3 navbar hide event */
+        $('.navbar-collapse').on('hide.bs.collapse', function() {
+//            console.log('hide');
+        });
     });
 </script>
 </body>
