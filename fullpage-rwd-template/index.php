@@ -40,20 +40,31 @@
     </div>
 </nav>
 <div id="fullpage">
-    <div class="section " id="section0">
+    <div class="section mac-laptop-background full-background" id="section0">
         <div class="section-container">
             <img class="logo" src="img/logo.png">
             <h1>Far far away, behind the word mountains, far from the countries </h1>
-            <h4>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            <h3>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
                 A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</h4>
+                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</h3>
         </div>
     </div>
     <div class="section" id="section1">
         <div class="section-container">
-            <div class="square-25">
-                <h1>Lorem ipsum</h1>
-                <h2>dolor sit amet</h2>
+            <div class="grid">
+                <div class="cell-25 mobile-background full-background">
+                    <h1>Lorem ipsum</h1>
+                </div>
+                <div class="cell-25 code-background full-background">
+                    <h1>dolor sit amet</h1>
+                </div>
+                <div class="cell-25 social-icons-background full-background">
+                    <h1>Consectetur adipiscing elit</h1>
+                </div>
+                <div class="cell-25 keyboard-background full-background">
+                    <h1>Nulla nec lectus leo</h1>
+                </div>
+                <div class="clear-both"></div>
             </div>
         </div>
     </div>
@@ -120,8 +131,9 @@
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
             menu: '.navbar',
             scrollingSpeed: 1000,
-            scrollOverflow: true
-        });
+//            scrollOverflow: true,
+            responsive: 961 //switch on fullpage.js
+            });
     });
 </script>
 
