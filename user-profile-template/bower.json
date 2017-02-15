@@ -1,9 +1,9 @@
 {
-  "name": "fullpage-rwd-template",
+  "name": "user-profile-template",
   "authors": [
     "Dariusz Wrzesien <dariuszwrzesien@gmail.com>"
   ],
-  "description": "Simply website based on fullpage.js",
+  "description": "simply user profile edit form",
   "main": "",
   "license": "MIT",
   "homepage": "",
@@ -15,9 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "fullpage.js": "^2.9.2",
-    "jquery-ui": "^1.12.1",
     "bootstrap": "^3.3.7",
-    "swiper": "^3.4.1"
+    "blueimp-load-image": "^2.10.0"
   }
 }

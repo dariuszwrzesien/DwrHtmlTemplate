@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 1;
+    background-color: #9d9d9d;
+}
+/*ol, ul{*/
+    /*list-style: none;*/
+/*}*/
+/*blockquote, q{*/
+    /*quotes: none;*/
+/*}*/
+/*blockquote:before, blockquote:after,*/
+/*q:before, q:after{*/
+    /*content: '';*/
+    /*content: none;*/
+/*}*/
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+.clear-both{
+    clear: both;
+}
+
+
+@media (min-width:0) { /* smartphones, iPhone, portrait 480x320 phones */
+    .user-form. .photo .user-photo{max-width: 100%}
+}
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+}
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+}
+@media (min-width:768px) { /* bootstrap collapse points */
+
+}
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+
+}
