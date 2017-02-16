@@ -10,26 +10,19 @@
     <meta name="Resource-type" content="Document" />
     <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/blueimp-load-image/css/vendor/jquery.Jcrop.css" />
     <link rel="stylesheet" type="text/css" href="css/dwr-style.css" />
 </head>
 <body>
-<section>
-    <h2>Select an image file</h2>
-    <p><input type="file" id="input-photo"></p>
-    <br>
-    <h2>Result</h2>
-    <p id="actions" style="display:none;">
-        <button type="button" id="edit">Edit</button>
-        <button type="button" id="crop">Crop</button>
-    </p>
-    <div id="result" class="result">
-        <p>This demo works only in browsers with support for the <a href="https://developer.mozilla.org/en/DOM/window.URL">URL</a> or <a href="https://developer.mozilla.org/en/DOM/FileReader">FileReader</a> API.</p>
-    </div>
-    <br>
-    <div id="exif" class="exif" style="display:none;">
-        <h2>Exif meta data</h2>
-        <p id="thumbnail" class="thumbnail" style="display:none;"></p>
-        <table></table>
+<section class="user-profile">
+    <div class="photo-container">
+        <div id="user-photo-container" class="photo">
+            <img src="" >
+        </div>
+        <div class="photo-input">
+            <input id="user-profile-photo-input" type="file" id="input-photo">
+        </div>
+        <button id="log">edit</button>
     </div>
 </section>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -37,24 +30,5 @@
 <script type="text/javascript" src="bower_components/blueimp-load-image/js/load-image.all.min.js"></script>
 <script type="text/javascript" src="bower_components/blueimp-load-image/js/vendor/jquery.Jcrop.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#input-photo').on('change', function(e){
-            loadImage(
-                    e.target.files[0],
-                    function (img) {
-                        document.body.appendChild(img);
-                    },
-                    {
-                        maxWidth: 500,
-                        maxHeight: 500,
-                        minWidth: 200,
-                        minHeight: 200,
-                        canvas: true,
-                    } // Options
-            );
-        });
-    });
-</script>
 </body>
 </html>

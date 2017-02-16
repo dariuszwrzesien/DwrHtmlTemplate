@@ -4,7 +4,6 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     line-height: 1;
-    background-color: #9d9d9d;
 }
 /*ol, ul{*/
     /*list-style: none;*/
@@ -22,7 +21,7 @@ table{
     border-spacing: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
+    color: #0b3e6f;
 }
 .clear-both{
     clear: both;
@@ -30,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (min-width:0) { /* smartphones, iPhone, portrait 480x320 phones */
-    .user-form. .photo .user-photo{max-width: 100%}
+
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
