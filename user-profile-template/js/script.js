@@ -1,28 +1,18 @@
 $(document).ready(function() {
 
     var photo_input = $('#user-profile-photo-input');
-    var photo_container = $('#user-photo-container');
+    var photo_container = $('#edit-user-photo-container');
+    var edit_photo_modal = $('#edit-photo-modal');
 
     photo_input.on('change', function(event){
         loadPhoto(photo_container, event);
+        // showModal(edit_photo_modal);
     });
-
-    // photo_input.on('change', function(e){
-    //     loadPhoto(photo_container, e);
-    //     // editPhoto(photo_container.children('canvas').length);
-    //
-    //     // if (photo_container.children('canvas').length > 0) {
-    //     //     editPhoto(photo_container.children('canvas'));
-    //     // }
-    //
-    // });
 
     $('#log').on('click', function () {
         var photo = photo_container;
         editPhoto(photo);
     });
-
-
 });
 
 function loadPhoto(element, event)
@@ -31,6 +21,7 @@ function loadPhoto(element, event)
         event.target.files[0],
         function (img) {
             element.html(img);
+            editPhoto(element);
         },
         {
             maxWidth: 500,
@@ -44,9 +35,29 @@ function loadPhoto(element, event)
 
 function editPhoto(element)
 {
-    console.log(element.children('canvas'));
-    console.log(element.children('canvas').length);
-    if (element.children('canvas').length > 0) {
-        element.Jcrop();
+    var canvas = element.find('canvas');
+
+    var selector = 200;
+
+    var width = canvas.width();
+    var height = canvas.height();
+
+    var x = (width/2)-(selector/2);
+    var y = (height/2)-(selector/2);
+    var x1 = x + (selector);
+    var y1 = y + (selector);
+
+    if (canvas.length > 0) {
+        canvas.Jcrop({
+            aspectRatio: 1, // Aspect ratio of w/h (e.g. 1 for square)
+            bgFade:     true,
+            bgOpacity: .5,
+            setSelect: [ x, y, x1, y1]
+        });
     }
+}
+
+function showModal(element)
+{
+    $(element).modal('show');
 }
