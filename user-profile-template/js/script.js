@@ -6,12 +6,10 @@ $(document).ready(function() {
 
     photo_input.on('change', function(event){
         loadPhoto(photo_container, event);
-        // showModal(edit_photo_modal);
     });
 
-    $('#log').on('click', function () {
-        var photo = photo_container;
-        editPhoto(photo);
+    $('#test').on('click', function () {
+        showModal(edit_photo_modal);
     });
 });
 
@@ -22,6 +20,7 @@ function loadPhoto(element, event)
         function (img) {
             element.html(img);
             editPhoto(element);
+            // showModal($('#edit-photo-modal'));
         },
         {
             maxWidth: 500,
@@ -50,6 +49,7 @@ function editPhoto(element)
     if (canvas.length > 0) {
         canvas.Jcrop({
             aspectRatio: 1, // Aspect ratio of w/h (e.g. 1 for square)
+            keySupport: false,
             bgFade:     true,
             bgOpacity: .5,
             setSelect: [ x, y, x1, y1]
