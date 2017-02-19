@@ -2,14 +2,15 @@ $(document).ready(function() {
 
     var photo_input = $('#user-profile-photo-input');
     var photo_container = $('#edit-user-photo-container');
-    var edit_photo_modal = $('#edit-photo-modal');
+    var edit_photo_dialog = $('#edit-photo-dialog');
 
     photo_input.on('change', function(event){
         loadPhoto(photo_container, event);
+        edit_photo_dialog.dialog();
     });
 
     $('#test').on('click', function () {
-        showModal(edit_photo_modal);
+        edit_photo_dialog.dialog();
     });
 });
 
@@ -20,7 +21,6 @@ function loadPhoto(element, event)
         function (img) {
             element.html(img);
             editPhoto(element);
-            // showModal($('#edit-photo-modal'));
         },
         {
             maxWidth: 500,
@@ -55,9 +55,4 @@ function editPhoto(element)
             setSelect: [ x, y, x1, y1]
         });
     }
-}
-
-function showModal(element)
-{
-    $(element).modal('show');
 }
