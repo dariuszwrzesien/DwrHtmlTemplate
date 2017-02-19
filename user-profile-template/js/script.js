@@ -4,9 +4,17 @@ $(document).ready(function() {
     var photo_container = $('#edit-user-photo-container');
     var edit_photo_dialog = $('#edit-photo-dialog');
 
+    var previewWidth = 500;
+    var previewHeight = 500;
+
+    var cropSelector = 200;
+
     photo_input.on('change', function(event){
-        loadPhoto(photo_container, event);
-        edit_photo_dialog.dialog();
+        loadPhoto(photo_container, event, previewWidth, previewHeight, cropSelector);
+        edit_photo_dialog.dialog({
+            width: previewWidth,
+            height: previewHeight
+        });
     });
 
     $('#test').on('click', function () {
@@ -14,29 +22,27 @@ $(document).ready(function() {
     });
 });
 
-function loadPhoto(element, event)
+function loadPhoto(element, event, width, height, cropSelector)
 {
-    loadImage(
+    return loadImage(
         event.target.files[0],
         function (img) {
             element.html(img);
-            editPhoto(element);
+            editPhoto(element, cropSelector);
         },
         {
-            maxWidth: 500,
-            maxHeight: 500,
-            minWidth: 200,
-            minHeight: 200,
+            maxWidth: width,
+            maxHeight: height,
+            minWidth: width,
+            minHeight: height,
             canvas: true
         } // Options
     );
 }
 
-function editPhoto(element)
+function editPhoto(element, selector)
 {
     var canvas = element.find('canvas');
-
-    var selector = 200;
 
     var width = canvas.width();
     var height = canvas.height();
