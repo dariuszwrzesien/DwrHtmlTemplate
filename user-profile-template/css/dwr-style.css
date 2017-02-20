@@ -5,17 +5,17 @@ body{
     font-size: 100%;
     line-height: 1;
 }
-/*ol, ul{*/
-    /*list-style: none;*/
-/*}*/
-/*blockquote, q{*/
-    /*quotes: none;*/
-/*}*/
-/*blockquote:before, blockquote:after,*/
-/*q:before, q:after{*/
-    /*content: '';*/
-    /*content: none;*/
-/*}*/
+ol, ul{
+    list-style: none;
+}
+blockquote, q{
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+    content: '';
+    content: none;
+}
 table{
     border-collapse: collapse;
     border-spacing: 0;
@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 .clear-both{
     clear: both;
 }
+
+/** Center image in Jcrop */
+.jcrop-centered {display: inline-block;}
+.photo-container{text-align: center;}
 
 @media (min-width:0) { /* smartphones, iPhone, portrait 480x320 phones */
 

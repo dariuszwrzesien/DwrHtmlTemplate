@@ -1,40 +1,44 @@
 $(document).ready(function() {
 
-    var photo_input = $('#user-profile-photo-input');
-    var photo_container = $('#edit-user-photo-container');
-    var edit_photo_dialog = $('#edit-photo-dialog');
+    var photoInput = $('#userProfilePhotoInput');
+    var photoContainer = $('#editUserPhotoContainer');
+    var photoEditModal = $('#editUserPhotoModal');
 
-    var previewWidth = 500;
-    var previewHeight = 500;
+    var jCropSelector = 200;
 
-    var cropSelector = 200;
 
-    photo_input.on('change', function(event){
-        loadPhoto(photo_container, event, previewWidth, previewHeight, cropSelector);
-        edit_photo_dialog.dialog({
-            width: previewWidth,
-            height: previewHeight
-        });
+    photoInput.on('change', function(event){
+        loadPhoto(
+            event,
+            {
+                photoContainer: photoContainer,
+                photoModalContainer: photoEditModal
+            },
+            {
+                previewWidth: 500,
+                previewHeight: 500,
+                cropSelector: 200
+            });
     });
 
-    $('#test').on('click', function () {
-        edit_photo_dialog.dialog();
-    });
+    photoEditModal.on('shown.bs.modal', function () {
+        editPhoto(photoContainer, jCropSelector);
+    })
 });
 
-function loadPhoto(element, event, width, height, cropSelector)
+function loadPhoto(event, containers, options)
 {
-    return loadImage(
+    loadImage(
         event.target.files[0],
         function (img) {
-            element.html(img);
-            editPhoto(element, cropSelector);
+            containers.photoContainer.html(img);
+            containers.photoModalContainer.modal();
         },
         {
-            maxWidth: width,
-            maxHeight: height,
-            minWidth: width,
-            minHeight: height,
+            maxWidth: options.previewWidth,
+            maxHeight: options.previewHeight,
+            minWidth: options.previewWidth,
+            minHeight: options.previewHeight,
             canvas: true
         } // Options
     );
@@ -58,7 +62,8 @@ function editPhoto(element, selector)
             keySupport: false,
             bgFade:     true,
             bgOpacity: .5,
-            setSelect: [ x, y, x1, y1]
+            setSelect: [ x, y, x1, y1],
+            addClass: 'jcrop-centered'
         });
     }
 }
