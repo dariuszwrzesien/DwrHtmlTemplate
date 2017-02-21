@@ -3,12 +3,15 @@ $(document).ready(function() {
     var photoInput = $('#userProfilePhotoInput');
     var photoContainer = $('#editUserPhotoContainer');
     var photoEditModal = $('#editUserPhotoModal');
+    var photoPreview = $('#photoPreview');
 
-    var jCropSelector = 200;
+    var image;
 
+    var cropSelector = 200;
+    var cropSubmit = $('#cropSubmit');
 
     photoInput.on('change', function(event){
-        loadPhoto(
+        image = loadPhoto(
             event,
             {
                 photoContainer: photoContainer,
@@ -22,13 +25,18 @@ $(document).ready(function() {
     });
 
     photoEditModal.on('shown.bs.modal', function () {
-        editPhoto(photoContainer, jCropSelector);
-    })
+        loadJcrop(photoContainer, cropSelector);
+    });
+
+    cropSubmit.click(function(event){
+        applyJcrop(photoPreview, image)
+    });
+
 });
 
 function loadPhoto(event, containers, options)
 {
-    loadImage(
+    return loadImage(
         event.target.files[0],
         function (img) {
             containers.photoContainer.html(img);
@@ -44,7 +52,7 @@ function loadPhoto(event, containers, options)
     );
 }
 
-function editPhoto(element, selector)
+function loadJcrop(element, selector)
 {
     var canvas = element.find('canvas');
 
@@ -63,7 +71,26 @@ function editPhoto(element, selector)
             bgFade:     true,
             bgOpacity: .5,
             setSelect: [ x, y, x1, y1],
+            onSelect: updateCoords,
             addClass: 'jcrop-centered'
         });
     }
 }
+
+function applyJcrop(canvas, image)
+{
+    var context = canvas[0].getContext("2d");
+
+    img = $('#editUserPhotoContainer').find('canvas');
+
+    context.drawImage(img[0], $('#x').val(), $('#y').val(), $('#w').val(), $('#h').val(), 0, 0, canvas[0].width, canvas[0].height);
+
+}
+
+function updateCoords(coords) {
+    $('#x').val(coords.x);
+    $('#y').val(coords.y);
+    $('#w').val(coords.w);
+    $('#h').val(coords.h);
+}
+

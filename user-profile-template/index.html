@@ -16,9 +16,26 @@
 </head>
 <body>
 <section class="user-profile">
-    <div class="photo-input">
-        <input id="userProfilePhotoInput" type="file">
-    </div>
+    <form method="post">
+        <div class="photo-preview">
+            <!--<img src="img/user_default.jpg" >-->
+            <canvas id="photoPreview" width="240" height="297" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+        </div>
+        <div class="photo-input">
+            <input id="userProfilePhotoInput" type="file">
+        </div>
+
+        <div class="user-profile-submit">
+            <input type="hidden" id="x" name="x" >
+            <input type="hidden" id="y" name="y" >
+            <input type="hidden" id="w" name="w" >
+            <input type="hidden" id="h" name="h" >
+
+            <input class="btn btn-success" type="submit" value="Save">
+        </div>
+    </form>
 </section>
 
 <!--Edit Photo Modal-->
@@ -27,16 +44,17 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="editUserPhotoModalLabel">Modal title</h4>
+                <h4 class="modal-title" id="editUserPhotoModalLabel">Edit profile photo</h4>
             </div>
             <div class="modal-body">
-                <div id="editUserPhotoContainer" class="photo-container">
-                    <img src="" >
-                </div>
+                <div id="editUserPhotoContainer" class="photo-container"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button id="cropSubmit" type="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
+                    Crop
+                </button>
             </div>
         </div>
     </div>

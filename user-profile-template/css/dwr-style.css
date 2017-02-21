@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 .photo-container{text-align: center;}
 
 @media (min-width:0) { /* smartphones, iPhone, portrait 480x320 phones */
-
+    .photo-preview img {border: 1px solid #8f8f8f;}
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
