@@ -4,14 +4,17 @@ $(document).ready(function() {
     var photoContainer = $('#editUserPhotoContainer');
     var photoEditModal = $('#editUserPhotoModal');
     var photoPreview = $('#photoPreview');
-
-    var image;
+    var photoDefault = $('#photoDefault');
 
     var cropSelector = 200;
     var cropSubmit = $('#cropSubmit');
 
     photoInput.on('change', function(event){
-        image = loadPhoto(
+
+        photoPreview.show();
+        photoDefault.hide();
+
+        loadPhoto(
             event,
             {
                 photoContainer: photoContainer,
@@ -22,21 +25,29 @@ $(document).ready(function() {
                 previewHeight: 500,
                 cropSelector: 200
             });
+
     });
 
     photoEditModal.on('shown.bs.modal', function () {
         loadJcrop(photoContainer, cropSelector);
     });
 
-    cropSubmit.click(function(event){
-        applyJcrop(photoPreview, image)
+    cropSubmit.click(function(){
+        applyJcrop(photoPreview, photoContainer.find('canvas'))
     });
 
 });
 
+/**
+ * Loads photo to stage
+ *
+ * @param event
+ * @param containers
+ * @param options
+ */
 function loadPhoto(event, containers, options)
 {
-    return loadImage(
+    loadImage(
         event.target.files[0],
         function (img) {
             containers.photoContainer.html(img);
@@ -52,6 +63,12 @@ function loadPhoto(event, containers, options)
     );
 }
 
+/**
+ * Applies Jcrop to canvas
+ *
+ * @param element
+ * @param selector
+ */
 function loadJcrop(element, selector)
 {
     var canvas = element.find('canvas');
@@ -77,16 +94,22 @@ function loadJcrop(element, selector)
     }
 }
 
-function applyJcrop(canvas, image)
+/**
+ * Rewrites selected canvas zone (on modal preview) to form canvas
+ *
+ * @param formCanvas
+ * @param modalCanvas
+ */
+function applyJcrop(formCanvas, modalCanvas)
 {
-    var context = canvas[0].getContext("2d");
-
-    img = $('#editUserPhotoContainer').find('canvas');
-
-    context.drawImage(img[0], $('#x').val(), $('#y').val(), $('#w').val(), $('#h').val(), 0, 0, canvas[0].width, canvas[0].height);
-
+    var context = formCanvas[0].getContext("2d");
+    context.drawImage(modalCanvas[0], $('#x').val(), $('#y').val(), $('#w').val(), $('#h').val(), 0, 0, formCanvas[0].width, formCanvas[0].height);
 }
 
+/**
+ * Updates jCrop coordinate from preview to form
+ * @param coords
+ */
 function updateCoords(coords) {
     $('#x').val(coords.x);
     $('#y').val(coords.y);
