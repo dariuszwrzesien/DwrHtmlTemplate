@@ -19,7 +19,7 @@
 <body>
 <section class="user-profile">
     <h1>Edit user profile</h1>
-    <form method="post">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
         <div class="left-panel">
             <div class="photo-preview">
                 <img id="photoDefault" src="img/user_default.jpg" >
@@ -35,11 +35,11 @@
                     <span class="glyphicon glyphicon-upload" aria-hidden="true"></span>
                     Upload photo
                 </label>
-                <input id="userProfilePhotoInput" type="file">
+                <input id="userProfilePhotoInput" name="photo" type="file">
             </div>
             <div class="form-group">
                 <label for="InputTitle">Title</label>
-                <select id="InputTitle" class="selectpicker">
+                <select id="InputTitle" name="title" class="selectpicker">
                     <option value="" selected>Choose title ...</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -47,33 +47,37 @@
             </div>
             <div class="form-group">
                 <label for="InputFirstName">First name</label>
-                <input type="text" class="form-control" id="InputFirstName" placeholder="First name">
+                <input name="firstname" type="text" class="form-control" id="InputFirstName" placeholder="First name">
             </div>
             <div class="form-group">
                 <label for="InputSurname">Surname</label>
-                <input type="text" class="form-control" id="InputSurname" placeholder="Surname">
+                <input name="surname" type="text" class="form-control" id="InputSurname" placeholder="Surname">
             </div>
             <div class="form-group">
                 <label for="InputEmail">E-mail address</label>
-                <input type="text" class="form-control" id="InputEmail" placeholder="E-mail address">
+                <input name="email" type="text" class="form-control" id="InputEmail" placeholder="E-mail address">
             </div>
         </div>
         <div class="right-panel">
             <div class="form-group">
+                <label for="InputPhoneNumber">Phone number</label>
+                <input name="phone" type="text" class="form-control" id="InputPhoneNumber" placeholder="Phone number">
+            </div>
+            <div class="form-group">
                 <label for="InputDateOfBirth">Date of birth</label>
-                <input type="text" class="form-control" id="InputDateOfBirth">
+                <input name="date_of_birth" type="text" class="form-control" id="InputDateOfBirth" placeholder="Date of birth">
             </div>
             <div class="form-group">
                 <label for="InputAddress">Address</label>
-                <input type="text" class="form-control" id="InputAddress" placeholder="Address">
+                <input name="address" type="text" class="form-control" id="InputAddress" placeholder="Address">
             </div>
             <div class="form-group">
                 <label for="InputPostcode">Postcode</label>
-                <input type="text" class="form-control" id="InputPostCode" placeholder="Postcode">
+                <input name="postcode" type="text" class="form-control" id="InputPostCode" placeholder="Postcode">
             </div>
             <div class="form-group">
                 <label for="InputCity">City</label>
-                <input type="text" class="form-control" id="InputCity" placeholder="City">
+                <input name="city" type="text" class="form-control" id="InputCity" placeholder="City">
             </div>
             <div class="form-group">
                 <label for="InputCountry">Country</label>
@@ -328,13 +332,21 @@
                     <option value="ZW">Zimbabwe</option>
                 </select>
             </div>
+            <div class="term-and-conditions">
+                <h4>Terms & Conditions</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis urna et mollis condimentum.
+                    Ut ultricies sed lorem eu pulvinar. Integer sed rutrum diam, eu auctor ipsum. Nam sit amet mauris
+                    consequat, rhoncus eros sit amet, eleifend massa. Sed tellus lectus, dictum eget dui ut,
+                    condimentum imperdiet nisi.</p>
+            </div>
         </div>
+        <div class="clear-both"></div>
         <div class="user-profile-submit">
             <input type="hidden" id="x" name="x" >
             <input type="hidden" id="y" name="y" >
             <input type="hidden" id="w" name="w" >
             <input type="hidden" id="h" name="h" >
-            <input class="btn btn-success" type="submit" value="Save">
+            <input name="name" class="btn btn-success" type="submit" value="Save">
         </div>
     </form>
 </section>
