@@ -9,10 +9,9 @@ $(document).ready(function() {
     var cropSelector = 200;
     var cropSubmit = $('#cropSubmit');
 
-    photoInput.on('change', function(event){
+    var editUserProfilePhotoBtn = $('#editUserProfilePhotoBtn');
 
-        photoPreview.show();
-        photoDefault.hide();
+    photoInput.on('change', function(event){
 
         loadPhoto(
             event,
@@ -34,7 +33,17 @@ $(document).ready(function() {
 
     cropSubmit.click(function(){
         applyJcrop(photoPreview, photoContainer.find('canvas'))
+
+        photoPreview.show();
+        photoDefault.hide();
+        editUserProfilePhotoBtn.show();
+        photoEditModal.modal('hide');
     });
+
+    editUserProfilePhotoBtn.click(function(){
+        photoEditModal.modal();
+    });
+
 
 });
 
@@ -64,7 +73,7 @@ function loadPhoto(event, containers, options)
 }
 
 /**
- * Applies Jcrop to canvas
+ * Applies Jcrop to canvas with defined selector size
  *
  * @param element
  * @param selector
@@ -103,11 +112,22 @@ function loadJcrop(element, selector)
 function applyJcrop(formCanvas, modalCanvas)
 {
     var context = formCanvas[0].getContext("2d");
-    context.drawImage(modalCanvas[0], $('#x').val(), $('#y').val(), $('#w').val(), $('#h').val(), 0, 0, formCanvas[0].width, formCanvas[0].height);
+    context.drawImage(
+        modalCanvas[0],
+        $('#x').val(),
+        $('#y').val(),
+        $('#w').val(),
+        $('#h').val(),
+        0,
+        0,
+        formCanvas[0].width,
+        formCanvas[0].height
+    );
 }
 
 /**
- * Updates jCrop coordinate from preview to form
+ * Updates jCrop coordinate from preview to form inputs
+ *
  * @param coords
  */
 function updateCoords(coords) {
