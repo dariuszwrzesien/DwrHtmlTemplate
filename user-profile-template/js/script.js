@@ -11,6 +11,8 @@ $(document).ready(function() {
 
     var editUserProfilePhotoBtn = $('#editUserProfilePhotoBtn');
 
+    var dateOfBirthInput = $('#InputDateOfBirth');
+
     photoInput.on('change', function(event){
 
         loadPhoto(
@@ -42,6 +44,10 @@ $(document).ready(function() {
 
     editUserProfilePhotoBtn.click(function(){
         photoEditModal.modal();
+    });
+
+    dateOfBirthInput.datepicker({
+        format: "dd/mm/yyyy"
     });
 
 
