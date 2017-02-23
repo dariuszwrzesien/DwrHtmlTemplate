@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" type="text/css" href="bower_components/blueimp-load-image/css/vendor/jquery.Jcrop.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/blueimp-file-upload/css/jquery.fileupload.css">
     <link rel="stylesheet" type="text/css" href="css/dwr-style.css" />
 </head>
 <body>
@@ -342,10 +341,15 @@
         </div>
         <div class="clear-both"></div>
         <div class="user-profile-submit">
+            <!-- Coordinates used by php script to create new image form selected area -->
             <input type="hidden" id="x" name="x" >
             <input type="hidden" id="y" name="y" >
             <input type="hidden" id="w" name="w" >
             <input type="hidden" id="h" name="h" >
+            <!-- Additional coordinates for setting up select area when click edit button -->
+            <input type="hidden" id="x2" name="x2" >
+            <input type="hidden" id="y2" name="y2" >
+            <!-- Submit form -->
             <input name="name" class="btn btn-success" type="submit" value="Save">
         </div>
     </form>

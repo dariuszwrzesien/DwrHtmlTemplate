@@ -62,6 +62,8 @@ $(document).ready(function() {
  */
 function loadPhoto(event, containers, options)
 {
+    clearCoords();
+
     loadImage(
         event.target.files[0],
         function (img) {
@@ -93,8 +95,15 @@ function loadJcrop(element, selector)
 
     var x = (width/2)-(selector/2);
     var y = (height/2)-(selector/2);
-    var x1 = x + (selector);
-    var y1 = y + (selector);
+    var x2 = x + (selector);
+    var y2 = y + (selector);
+
+    var coords = {
+        x: $('#x').val() == '' ? x : $('#x').val(),
+        y: $('#y').val() == '' ? y : $('#y').val(),
+        x2: $('#x2').val() == '' ? x2 : $('#x2').val(),
+        y2: $('#y2').val() == '' ? y2 : $('#y2').val()
+    }
 
     if (canvas.length > 0) {
         canvas.Jcrop({
@@ -102,7 +111,7 @@ function loadJcrop(element, selector)
             keySupport: false,
             bgFade:     true,
             bgOpacity: .5,
-            setSelect: [ x, y, x1, y1],
+            setSelect: [ coords.x, coords.y, coords.x2, coords.y2],
             onSelect: updateCoords,
             addClass: 'jcrop-centered'
         });
@@ -137,9 +146,22 @@ function applyJcrop(formCanvas, modalCanvas)
  * @param coords
  */
 function updateCoords(coords) {
+
     $('#x').val(coords.x);
     $('#y').val(coords.y);
     $('#w').val(coords.w);
     $('#h').val(coords.h);
+    $('#x2').val(coords.x2);
+    $('#y2').val(coords.y2);
+}
+
+function clearCoords()
+{
+    $('#x').val('');
+    $('#y').val('');
+    $('#w').val('');
+    $('#h').val('');
+    $('#x2').val('');
+    $('#y2').val('');
 }
 
