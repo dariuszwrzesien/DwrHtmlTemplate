@@ -1,0 +1,21 @@
+{
+  "name": "datatables-template",
+  "authors": [
+    "Dariusz Wrzesien <dariuszwrzesien@gmail.com>"
+  ],
+  "description": "Tables template",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "datatables.net": "^2.1.1"
+  }
+}
